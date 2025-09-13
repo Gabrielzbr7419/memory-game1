@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+    <script src="scripts/main.js"></script>
+    
+    <link rel="stylesheet" href="css/board.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="scripts/board.js"> </script>
+       <script src="scripts/card.js"> </script>
+</head>
+<body>
+    <template id="cardTemplate">
+        <div class="fli-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back"><img src="immages/heros/card01.jpeg"></div>
+            </div>
+        </div>
+    </template>
+    
+    <div id="board"> <class class="hidden"></div>
+
+    <div id="menu">
+        <h1>Memoria do heroi</h1>
+        <div class="container">
+            <select name="numCards" id="numCards"></select>
+            <button id="start">start</button>
+        </div>
+    </div>
+</body>
+</html>
