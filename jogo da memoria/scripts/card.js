@@ -21,4 +21,12 @@ gen(heroNumber) {
 
     return clone;       
 }
+
+onClick(event) {
+    if (this.flippedCards.size >= 2) {
+        this.endTurn();
+    }else{
+        this.flippedCards(event.target); 
+         }
+   }
 }
